@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Greddo Logo"> 
+                <h1>greddo</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Sales</a></li>
+                    <li><a href="#">Sellers</a></li>
+                    <li><a href="#">Invoices</a></li>
+                    <li><a href="#">Messages</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </nav>
+            <div class="sign-out">
+                <a href="#">Sign out</a>
+            </div>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <input type="search" placeholder="Search">
+                <div class="icons">
+                    <span class="icon">🌙</span>
+                    <span class="icon">🔔</span>
+                    <span class="icon">👤</span>
+                </div>
+            </header>
+            <div class="dashboard">
+                <div class="cards">
+                    <div class="card">
+                        <h2>Total Sales</h2>
+                        <p>$379,690 <span class="increase">+7.46%</span></p>
+                    </div>
+                    <div class="card">
+                        <h2>Expenses</h2>
+                        <p>$56,880 <span class="decrease">-9.51%</span></p>
+                    </div>
+                    <div class="card">
+                        <h2>New Customers</h2>
+                        <p>4,890 <span class="increase">+4.38%</span></p>
+                    </div>
+                </div>
+                <div class="charts">
+                    <div class="sales-report">
+                        <h2>Sales report</h2>
+                        <div class="chart">
+                            <canvas id="salesChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="data-charts">
+                        <div class="chart-container">
+                            <h2>Seller Data</h2>
+                            <canvas id="sellerPieChart"></canvas>
+                        </div>
+                        <div class="country-names">
+                            <h2>Countries</h2>
+                            <ul>
+                                <li>USA</li>
+                                <li>Canada</li>
+                                <li>UK</li>
+                                <li>Germany</li>
+                                <li>France</li>
+                            </ul>
+                        </div>
+                        <div class="chart-container">
+                            <h2>Customer Data</h2>
+                            <canvas id="customerPieChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-products">
+                    <h2>Top Products</h2>
+                    <ul>
+                        <li>Grin - Oversized T-shirt <span class="count">2,263</span></li>
+                        <li>Gluten Free Pasta <span class="count">1,917</span></li>
+                        <li>Mushroom Coffee <span class="count">1,848</span></li>
+                        <li>Galaxy Watch6 <span class="count">1,684</span></li>
+                        <li>Nike Dunk Low Retro <span class="count">1,226</span></li>
+                        <li>Baby Swing Chair <span class="count">1,082</span></li>
+                        <li>Air Jordan 1 Retro High <span class="count">967</span></li>
+                        <li>Google Pixel Watch 2 <span class="count">951</span></li>
+                        <li>Abs Mini Power Bank <span class="count">925</span></li>
+                        <li>Ruffwear Dog Harness <span class="count">912</span></li>
+                        <li>Air purifiers <span class="count">873</span></li>
+                        <li>Wedge Pillows <span class="count">846</span></li>
+                        <li>Parex Lint Roller <span class="count">814</span></li>
+                        <li>Home Pro Spin Mop <span class="count">749</span></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
